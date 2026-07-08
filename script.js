@@ -56,3 +56,12 @@ document.querySelectorAll('.modal').forEach(function (modal) {
         }
     })
 })
+document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.modal.active');
+        if (activeModal) {
+            activeModal.classList.remove('active');
+            document.body.style.overflow ='';
+        }
+    }
+})
