@@ -72,9 +72,12 @@ header {
     height: 80px;
     background-color: rgb(10, 45, 60);
     padding: 20px 135px;
-
+}
+.headline {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
-
+    align-self: flex-start;
 }
 
 main {
