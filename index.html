@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./assets/icons/logo_fotogram.svg" alt="logo_fotogram">
+        </div>
+    </header>
+    <main>
+        <h1>Your personal photo album</h1>
+        <div class="photo-grid">
+            <div onclick="openModal('modal', 0)" class="photo-card"><img src="./assets/imgs/img_1.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 1)" class="photo-card"><img src="./assets/imgs/img_2.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 2)" class="photo-card"><img src="./assets/imgs/img_3.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 3)" class="photo-card"><img src="./assets/imgs/img_4.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 4)" class="photo-card"><img src="./assets/imgs/img_5.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 5)" class="photo-card"><img src="./assets/imgs/img_6.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 6)" class="photo-card"><img src="./assets/imgs/img_7.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 7)" class="photo-card"><img src="./assets/imgs/img_8.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 8)" class="photo-card"><img src="./assets/imgs/img_9.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 9)" class="photo-card"><img src="./assets/imgs/img_10.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 10)" class="photo-card"><img src="./assets/imgs/img_11.jpeg" alt=""></div>
+            <div onclick="openModal('modal', 11)" class="photo-card"><img src="./assets/imgs/img_12.jpeg" alt=""></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="./assets/icons/logo_DA.svg" alt="logo_developer_akadamie">
+            <p>© 2023 Developer Akademie GmbH</p>
+        </div>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="modal-box" id="modal-box">
+            <div class="modal-headline">
+                <h2 id="img-title"></h2>
+                <img onclick="closeModal('')" src="./assets/icons/exit_default.svg" alt="close-modal">
+            </div>
+            <div class="photo-container" id="photo-container">
+                <img src="./assets/imgs/img_1.jpeg" alt="">
+            </div>
+            <div class="modal-nav" id="modal-nav">
+                <img onclick="prevImage()" src="./assets/icons/pfeil_default.svg" alt="nav-left">
+                <h3 id="img-index">1/12</h3>
+                <img onclick="nextImage()" src="./assets/icons/pfeil_default.svg" alt="nav-right">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
