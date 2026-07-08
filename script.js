@@ -16,8 +16,6 @@ const photos = [ // Array containing the filenames of the images
 
 let currentIndex = 0;
 
-const container = document.querySelectorAll('.photo-card'); // Gets all elements with the class "photo-card"
-
 const photoGrid = document.getElementById('photo-grid');
 
 photos.forEach(function (path, index) {
