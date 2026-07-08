@@ -161,6 +161,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .modal.active {
     display: flex;
 }
@@ -209,8 +210,63 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 50px 64px;
+    padding: 40px 64px;
 }
+
+button {
+    border: none;
+    background-color: transparent;
+}
+.close-modal-button {
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/icons/exit_default.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.close-modal-button:hover {
+    background-image: url(./assets/icons/exit_hover.svg);
+}
+.close-modal-button:focus {
+    background-image: url(./assets/icons/exit_hover.svg);
+    outline: none;
+}
+.close-modal-button:active {
+    background-image: url(./assets/icons/exit_onclick.svg);
+}
+.prev-img-button {
+     width: 60px;
+    height: 60px;
+    background-image: url(./assets/icons/pfeil_default.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+.prev-img-button:hover {
+    background-image: url(./assets/icons/pfeil_onclick.svg);
+}
+.prev-img-button:focus {
+    background-image: url(./assets/icons/pfeil_onclick.svg);
+    outline: none;
+}
+.next-img-button {
+     width: 60px;
+    height: 60px;
+    background-image: url(./assets/icons/pfeil_default.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.next-img-button:hover {
+    background-image: url(./assets/icons/pfeil_onclick.svg);
+}
+.next-img-button:focus {
+    background-image: url(./assets/icons/pfeil_onclick.svg);
+    outline: none;
+}
+
 
 
 
