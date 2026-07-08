@@ -112,7 +112,7 @@ main {
     width: 150px;
 
     border-radius: 16px;
-    border: 2px solid rgb(10, 45, 60);
+    border: 2px solid black;
 
     object-fit: cover;
 }
