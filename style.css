@@ -71,7 +71,7 @@ body {
 header {
     height: 80px;
     background-color: rgb(10, 45, 60);
-    padding: 20px 140px;
+    padding: 20px 135px;
 
     display: flex;
 
@@ -112,14 +112,14 @@ main {
     width: 150px;
 
     border-radius: 16px;
-    border: 2px solid black;
+    border: 2px solid rgb(10, 45, 60);
 
     object-fit: cover;
 }
 
-.photo-card:hover {
+.photo-card:hover img {
     cursor: pointer;
-    border-color: white;
+    border-color: rgba(107, 193, 225, 1);
     filter: brightness(1.2);
 }
 
@@ -217,6 +217,7 @@ button {
     border: none;
     background-color: transparent;
 }
+
 .close-modal-button {
     width: 32px;
     height: 32px;
@@ -225,18 +226,22 @@ button {
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
 .close-modal-button:hover {
     background-image: url(./assets/icons/exit_hover.svg);
 }
+
 .close-modal-button:focus {
     background-image: url(./assets/icons/exit_hover.svg);
     outline: none;
 }
+
 .close-modal-button:active {
     background-image: url(./assets/icons/exit_onclick.svg);
 }
+
 .prev-img-button {
-     width: 60px;
+    width: 60px;
     height: 60px;
     background-image: url(./assets/icons/pfeil_default.svg);
     background-size: contain;
@@ -244,24 +249,29 @@ button {
     cursor: pointer;
     transform: rotate(-180deg);
 }
+
 .prev-img-button:hover {
     background-image: url(./assets/icons/pfeil_onclick.svg);
 }
+
 .prev-img-button:focus {
     background-image: url(./assets/icons/pfeil_onclick.svg);
     outline: none;
 }
+
 .next-img-button {
-     width: 60px;
+    width: 60px;
     height: 60px;
     background-image: url(./assets/icons/pfeil_default.svg);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
 .next-img-button:hover {
     background-image: url(./assets/icons/pfeil_onclick.svg);
 }
+
 .next-img-button:focus {
     background-image: url(./assets/icons/pfeil_onclick.svg);
     outline: none;
@@ -369,4 +379,11 @@ button {
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
+}
+
+@media screen and (min-width: 1155px) {
+    .photo-card:nth-child(8) {
+        grid-column-start: 2;
+    }
+
 }

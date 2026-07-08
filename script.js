@@ -45,16 +45,16 @@ function updateModalImage() {
     modalImg.src = photos[currentIndex];
     document.getElementById('img-index').textContent = `${currentIndex + 1}/${photos.length}`;
 
-    const filename = photos [currentIndex].split('/').pop().split('.')[0];
+    const filename = photos[currentIndex].split('/').pop().split('.')[0];
     document.getElementById('img-title').textContent = filename;
 }
 function nextImage() {
-    currentIndex = (currentIndex + 1) % photos.length; 
+    currentIndex = (currentIndex + 1) % photos.length;
     updateModalImage();
 }
 
 function prevImage() {
-    currentIndex = (currentIndex - 1 + photos.length) % photos.length; 
+    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
     updateModalImage();
 }
 document.querySelectorAll('.modal').forEach(function (modal) {
@@ -65,12 +65,12 @@ document.querySelectorAll('.modal').forEach(function (modal) {
         }
     })
 })
-document.addEventListener('keydown', function(e){
+document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         const activeModal = document.querySelector('.modal.active');
         if (activeModal) {
             activeModal.classList.remove('active');
-            document.body.style.overflow ='';
+            document.body.style.overflow = '';
         }
     }
 })
