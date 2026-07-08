@@ -17,20 +17,7 @@
     </header>
     <main>
         <h1>Your personal photo album</h1>
-        <div class="photo-grid">
-            <div onclick="openModal('modal', 0)" class="photo-card"><img src="./assets/imgs/img_1.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 1)" class="photo-card"><img src="./assets/imgs/img_2.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 2)" class="photo-card"><img src="./assets/imgs/img_3.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 3)" class="photo-card"><img src="./assets/imgs/img_4.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 4)" class="photo-card"><img src="./assets/imgs/img_5.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 5)" class="photo-card"><img src="./assets/imgs/img_6.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 6)" class="photo-card"><img src="./assets/imgs/img_7.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 7)" class="photo-card"><img src="./assets/imgs/img_8.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 8)" class="photo-card"><img src="./assets/imgs/img_9.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 9)" class="photo-card"><img src="./assets/imgs/img_10.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 10)" class="photo-card"><img src="./assets/imgs/img_11.jpeg" alt=""></div>
-            <div onclick="openModal('modal', 11)" class="photo-card"><img src="./assets/imgs/img_12.jpeg" alt=""></div>
-        </div>
+        <div class="photo-grid" id="photo-grid"></div>
     </main>
     <footer>
         <div class="footer-content">
@@ -42,7 +29,7 @@
         <div class="modal-box" id="modal-box">
             <div class="modal-headline">
                 <h2 id="img-title"></h2>
-                <button class="close-modal-button" onclick="closeModal('')"></button>
+                <button class="close-modal-button" onclick="closeModal('modal')"></button>
             </div>
             <div class="photo-container" id="photo-container">
                 <img src="./assets/imgs/img_1.jpeg" alt="">

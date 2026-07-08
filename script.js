@@ -18,9 +18,20 @@ let currentIndex = 0;
 
 const container = document.querySelectorAll('.photo-card'); // Gets all elements with the class "photo-card"
 
-console.log(container.length); // Logs how many containers were found
-console.log(container); // Logs the list of containers itself (for debugging)
+const photoGrid = document.getElementById('photo-grid');
 
+photos.forEach(function (path, index) {
+    const card = document.createElement('div');
+    card.classList.add('photo-card');
+    card.setAttribute('onclick', `openModal('modal', ${index})`);
+
+    const img = document.createElement('img');
+    img.src = path;
+    img.alt = '';
+
+    card.appendChild(img);
+    photoGrid.appendChild(card);
+});
 function openModal(modal, index) {
     currentIndex = index;
     updateModalImage();
